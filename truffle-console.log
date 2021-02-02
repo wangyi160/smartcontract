@@ -1,0 +1,141 @@
+
+
+F:\wallet\smartcontract>truffle develop
+Truffle Develop started at http://127.0.0.1:9545/
+
+Accounts:
+(0) 0xc721e250a770a473fc74f2043ac669ee5d5beca2
+(1) 0x0978bd7748543e97b24d9363074b59bea519f910
+(2) 0x9c1fab6ecdcb43167909f5ea72699e78cccf8ada
+(3) 0x574e90b853684240383b5f4793bdd8b613a3a88e
+(4) 0x3ee1f2c6877d05a6650aaaf578ba5fdd3cfe7e1a
+(5) 0x062cfbfc3ad20c27f80d650938809fa46d998b37
+(6) 0xb682b509bec6962607518028d4775577affe4a6a
+(7) 0xdc7eabf5cd14d3b2b042ad7d9bddaba6c5a931ea
+(8) 0x7ac5d9c8e992f6db10f7128eb6314b2b489e1f5a
+(9) 0x84b10367013395d7c0751a0dfcf4a221a48468d2
+
+Private Keys:
+(0) 79153dc29ea4d8947cf45fbca41aaf700de4aa833073bd8d66d17d313b8dea42
+(1) 9ee7ec6d8e2511f9290812245b3b36b955221527cdf09e81f6a2fa3beba8d52f
+(2) 0d1a8695e20ff707fbe5f10647328422e997f831ca4b47a26442fa629d658312
+(3) 4ed1041ddb995a4242ae37f18cb181f9feaffef02893d5a0398740e5df5448c0
+(4) 17417c321cab321b95924015719e4d5cd2156e5f1ee21bed3e160eba4b420c13
+(5) feba1c116f1d897d4b754f083a5e118768cad6dc8ebe687e8ca65582d2162ab8
+(6) dde4d4cf0d3c59661287cf146f8524402d9fd5b8b7abf3f77c7cf830f7d1fe07
+(7) d7b8728e4ebac5fafadda1e9916cbddd0731779f2d4ddba074396a689fa30bc0
+(8) e95d3e2cb2cf589578f917bcf5f9aaf397a8b50bdd804df3f6166ec2d1a23285
+(9) d613eb5bfe765e81ea116612b5e04256f224f27425aaa8ce26eda87a9ccddc34
+
+Mnemonic: cry meadow trouble broken throw bright hunt swap tired shrimp chimney utility
+
+⚠️  Important ⚠️  : This mnemonic was created for you by Truffle. It is not secure.
+Ensure you do not use it on production blockchains, or else you risk losing funds.
+
+truffle(develop)> compile
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+truffle(develop)> migrate
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'develop'
+> Network id:      5777
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x1cfc1ace17530800dd83adc76dcffa793b9c56afa4ae34871a2ecad94e188df8
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x8397adf3943e1c58b0B226DD7E7DEe2cE5DAb8Ff
+   > block number:        1
+   > block timestamp:     1612281376
+   > account:             0xc721e250A770A473FC74F2043Ac669ee5D5beCA2
+   > balance:             99.99615706
+   > gas used:            192147 (0x2ee93)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00384294 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00384294 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'ToolsToken'
+   ----------------------
+Error: Invalid number of parameters for "undefined". Got 2 expected 0!
+truffle(develop)> migrate
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'develop'
+> Network id:      5777
+> Block gas limit: 6721975 (0x6691b7)
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'ToolsToken'
+   ----------------------
+   > transaction hash:    0xa9d18edc24518ffa46b3d73f276988a63753daa83f2347d747989452939d85d0
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x43Ba6394728b8d1C9f367ce7475D86c69fcec24a
+   > block number:        3
+   > block timestamp:     1612281399
+   > account:             0xc721e250A770A473FC74F2043Ac669ee5D5beCA2
+   > balance:             99.97311968
+   > gas used:            1109531 (0x10ee1b)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02219062 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.02219062 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.02219062 ETH
+
+
+truffle(develop)> let instance = await ToolsToken.deployed()
+undefined
+truffle(develop)> await instance.name()
+'COVID-20'
+truffle(develop)> await instance.totalSupply()
+BN {
+  negative: 0,
+  words: [ 100, <1 empty item> ],
+  length: 1,
+  red: null
+}

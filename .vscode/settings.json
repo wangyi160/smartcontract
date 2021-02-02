@@ -1,0 +1,7 @@
+{
+    "ethcode.keystore.keyStorePath": "c:\\Users\\wangyi\\.vscode\\extensions\\ethential.ethcode-0.1.15",
+    "ethcode.userConfig.compiler": {
+        "lang": "solidity",
+        "solidityCompilerVersion": "latest"
+    }
+}
